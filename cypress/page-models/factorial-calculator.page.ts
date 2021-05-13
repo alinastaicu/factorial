@@ -8,27 +8,27 @@ class FactorialCalculatorPage {
   }
 
   public get header() {
-    return cy.get('h1.margin-base-vertical.text-center');
+    return cy.get('h1.margin-base-vertical.text-center').as('header');
   }
 
   public get input() {
-    return cy.get('#number.form-control');
+    return cy.get('#number.form-control').as('input');
   }
 
   public get calculateButton() {
-    return cy.get('.btn-lg');
+    return cy.get('.btn-lg').as('calculateButton');
   }
 
   public link(linkName: LINK) {
-    return cy.xpath(`//a[contains(.,"${linkName}")]`);
+    return cy.xpath(`//a[contains(.,"${linkName}")]`).as(`link:${linkName}`);
   }
 
   public get validationMessage() {
-    return cy.get('#resultDiv');
+    return cy.get('#resultDiv').as('validationMessage');
   }
 
   public get resultMessage() {
-    return cy.get('#resultDiv');
+    return cy.get('#resultDiv').as('resultMessage');
   }
 }
 
