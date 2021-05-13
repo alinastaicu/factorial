@@ -1,7 +1,7 @@
 {
   "scripts": {
     "cypress:open": "cypress open",
-    "cypress:ci": "cypress run --headless",
+    "cypress:ci": "cypress run --headless --record --key 0cb8e2ad-ec2c-4d3d-a943-410c7f734346",
     "tsc": "tsc --noEmit",
     "lint": "eslint 'cypress/**/*.ts' --fix",
     "lint:fix": "eslint 'cypress/**/*.ts' --fix"
